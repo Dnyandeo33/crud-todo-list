@@ -1,5 +1,7 @@
 const dom = {
-    parent: document.getElementById('parent'),
+    input: document.getElementById('input'),
+    btn: document.getElementById('btn'),
+    toDos: document.getElementById('todos')
 };
 
 export default dom;
