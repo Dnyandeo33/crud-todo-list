@@ -10,6 +10,7 @@ const addToDoItemHandler = async () => {
         title: value,
         completed: false,
     };
+
     const res = await addToDoItem(newItem);
     return res;
 };
