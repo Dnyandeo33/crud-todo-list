@@ -9,15 +9,18 @@
 </head>
 
 <body>
-    <main>
-        <h1>CRUD Todo List</h1>
-        <div class="container">
-            <input type="text" id="input">
-            <button type="button" id="btn">Add</button>
-            <div class="todolist" id="todos">
+    <section class="section-center">
+        <form class="todos-form">
+            <h3>CRUD Todo list</h3>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="e.g. go to doctor" />
+                <button type="submit" class="submit-btn">submit</button>
             </div>
+        </form>
+        <div class="todos-container">
+            <div class="todos-list"></div>
         </div>
-    </main>
+    </section>
     <script type="module" src="./src/init.js"></script>
 </body>
 

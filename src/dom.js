@@ -1,7 +1,7 @@
 const dom = {
-    input: document.getElementById('input'),
-    btn: document.getElementById('btn'),
-    toDos: document.getElementById('todos')
+    btn: document.querySelector('.submit-btn'),
+    input: document.getElementById('todo-input'),
+    itemsList: document.querySelector('.todos-list'),
 };
 
 export default dom;
