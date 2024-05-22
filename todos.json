@@ -6,17 +6,7 @@
       "completed": false
     },
     {
-      "id": "93df",
-      "title": "hello",
-      "completed": false
-    },
-    {
       "id": "1f26",
-      "title": "go to the ",
-      "completed": false
-    },
-    {
-      "id": "505c",
       "title": "go to the ",
       "completed": false
     },
@@ -25,10 +15,6 @@
       "title": "go to the farmacy",
       "completed": false
     },
-    {
-      "id": "0bdc",
-      "title": "go to the farmacy",
-      "completed": false
-    }
+    
   ]
 }
