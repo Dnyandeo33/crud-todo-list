@@ -1,9 +1,26 @@
 {
   "todos": [
     {
+<<<<<<< HEAD
       "id": "1f0f",
       "title": "go to the farmacy",
       "completed": true
     }
+=======
+      "id": "e9dd",
+      "title": "hello",
+      "completed": false
+    },
+    {
+      "id": "1f26",
+      "title": "go to the ",
+      "completed": false
+    },
+    {
+      "id": "f100",
+      "title": "go to the farmacy",
+      "completed": false
+    },  
+>>>>>>> 4659ea86679f0ccedce3286fe0eeeb948c63fdb8
   ]
 }
