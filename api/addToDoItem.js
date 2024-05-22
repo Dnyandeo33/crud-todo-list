@@ -1,8 +1,6 @@
-import { baseUrl } from './getItems.js';
-
 const addToDoItem = async (item) => {
     try {
-        const res = await fetch(baseUrl, {
+        const res = await fetch('https://dnyandeo33.github.io/crud-todo-list/todos.json', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

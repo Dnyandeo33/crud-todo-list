@@ -1,8 +1,6 @@
-import { baseUrl } from './getItems.js';
-
 const deleteToDoItem = async (id) => {
     try {
-        const res = await fetch(`${baseUrl}/${id}`, {
+        const res = await fetch(`https://dnyandeo33.github.io/crud-todo-list/todos.json/${id}`, {
             method: 'DELETE',
         });
         const data = await res.json({ message: 'item has been deleted successfully...' });
