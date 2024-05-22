@@ -1,26 +1,26 @@
 # Image gallery
 
-> A simple
+> A simple todo list using json server
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Image gallery](#image-gallery)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Features](#features)
+  - [Status](#status)
 
 ## General info
 
-> The objective of the project is to practice separation of concern in
-> JavaScript.
+> CRUD todo list using javaScript and json server
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/todo.png)
 
 ## Technologies
 
@@ -31,31 +31,38 @@
 
 ## Setup
 
-clone the repo and start using the stop watch.
+clone the repo, run npm install, and run npm server
 
 ## Code Examples
 
 ```js
+const addToDoItem = async (item) => {
+	try {
+		const res = await fetch('http://localhost:3000/todos', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(item),
+		});
+		const data = await res.json({ message: 'Items added successfully...' });
+		return data;
+	} catch (error) {
+		return error;
+	}
+};
 
+export default addToDoItem;
 ```
 
 ## Features
 
-List of features ready and Todos for future development
-
--
--
--
-
 To-do list:
 
--
--
+- Add new item
+- Check item
+- Delete item
 
 ## Status
 
-Project is: _in progress_
-
-## Inspiration
-
-## Contact
+Project is: _Done_
