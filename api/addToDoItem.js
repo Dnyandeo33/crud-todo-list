@@ -1,6 +1,6 @@
 const addToDoItem = async (item) => {
     try {
-        const res = await fetch('https://dnyandeo33.github.io/crud-todo-list/todos.json', {
+        const res = await fetch('http://localhost:3000/todos', {
             method: 'POST',
             mode: 'no-cors',
             headers: {

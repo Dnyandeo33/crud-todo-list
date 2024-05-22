@@ -1,11 +1,9 @@
 const updateToDoItem = async (id, updatedItem) => {
     try {
-        const res = await fetch(`https://dnyandeo33.github.io/crud-todo-list/todos.json/${id}`, {
+        const res = await fetch(`http://localhost:3000/todos/${id}`, {
             method: 'PUT',
-            mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
             },
             body: JSON.stringify(updatedItem),
         });
